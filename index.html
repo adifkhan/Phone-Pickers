@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Experiencing JavaScript</h1>
+    </header>
+    <main>
+        <article id="first-blog">
+            <h2>blog no-1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quibusdam, eveniet expedita officiis
+                consectetur laudantium perferendis quos iste veritatis cumque.</p>
+        </article>
+        <article id="second-blog">
+            <h2 class="title">blog no-2</h2>
+            <p>Delectus ipsa ducimus eum deleniti consequatur quo fuga tempore nemo necessitatibus aliquid vero aut,
+                sapiente fugiat cupiditate dolor inventore. Error?</p>
+        </article>
+        <article>
+            <h2 class="title">blog no-3</h2>
+            <p>Omnis tempora quos id aut ipsum rem, consequuntur aspernatur voluptas quis dolor fugiat inventore laborum
+                molestias odit. Cum, quam cupiditate.</p>
+        </article>
+        <article>
+            <h2 class="title">blog no-4</h2>
+            <p>Nostrum cupiditate voluptate deleniti praesentium quidem ut ipsam quis minus! Vitae ipsam, libero odio
+                dolore dolorem adipisci similique quaerat facere.</p>
+        </article>
+    </main>
+    <footer>
+        <h4 id="footer">all right reserver</h4>
+    </footer>
+
+
+    <script>
+        const firstBlog = document.getElementById('first-blog');
+        firstBlog.style.textAlign = 'center'
+        firstBlog.style.color = 'green';
+
+        const heading = document.getElementsByClassName('title');
+        for (const title of heading) {
+            title.style.color = 'white';
+            title.style.backgroundColor = 'orangered'
+            title.style.padding = '10px'
+            title.style.borderRadius = '10px'
+            title.style.width = '150px'
+            title.style.textAlign = 'center'
+
+        }
+
+        const footer = document.getElementById('footer');
+        footer.style.textAlign = 'center';
+    </script>
+</body>
+
+</html>
