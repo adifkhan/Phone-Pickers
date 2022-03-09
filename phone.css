@@ -1,0 +1,16 @@
+.back-color{
+    background-color: beige;
+}
+.error-container {
+    font-size: large;
+    color: red;
+    width: 50%;
+    text-align: center;
+    display: none;
+}
+.show-more-btn {
+    display: none;
+}
+#spinner {
+    display: none;
+}
